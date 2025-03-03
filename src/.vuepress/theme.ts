@@ -4,16 +4,16 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://blog.kinlong.me/",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "QingXuan",
+    url: "https://blog.kinlong.me/",
   },
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://pic1.imgdb.cn/item/67c42e44d0e0a243d40a1b02.png",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "Hing-Xuan/Blog",
 
   docsDir: "src",
 
