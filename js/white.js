@@ -38,7 +38,7 @@ mclose.onclick = function () {
 
 // 页面加载时检查并应用主题
 document.addEventListener("DOMContentLoaded", function () {
-    const savedTheme = localStorage.getItem("theme") || "light";
+    const savedTheme = localStorage.getItem("theme") || "paper";
     document.documentElement.setAttribute("data-theme", savedTheme);
 
     updateIcon(savedTheme);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // 切换主题
 document.getElementById("theme-change-btn").addEventListener("click", function () {
     const html = document.documentElement;
-    const newTheme = html.getAttribute("data-theme") === "light" ? "dark" : "light";
+    const newTheme = html.getAttribute("data-theme") === "paper" ? "dark" : "paper";
     html.setAttribute("data-theme", newTheme);
     localStorage.setItem("theme", newTheme); // 存储主题状态
 
@@ -56,10 +56,10 @@ document.getElementById("theme-change-btn").addEventListener("click", function (
 
 function updateIcon(theme) {
     const themeIcon = document.getElementById("themeIcon");
-    if (theme === "light") {
-        themeIcon.className = "ri-sun-fill";  // 太阳图标
-    } else {
+    if (theme === "dark") {
         themeIcon.className = "ri-moon-fill"; // 月亮图标
+    } else {
+        themeIcon.className = "ri-sun-fill";  // 太阳图标
     }
 }
 
